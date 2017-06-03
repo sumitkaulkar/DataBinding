@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<!--Just a sample not using this xml and its activity-->
+    <data>
+
+        <variable
+            name="mHandler"
+            type="com.example.sumit.databindingdemo2.MyHandler" />
+
+        <variable
+            name="mObject"
+            type="com.example.sumit.databindingdemo2.ProductObject" />
+    </data>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <!--<merge>
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="64dp"
+            android:layout_marginTop="24dp"
+            android:text="@{(view) -> mHandler.onClickTextShow(view, mObject.name.get())}"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </merge>
+-->
+</layout>
