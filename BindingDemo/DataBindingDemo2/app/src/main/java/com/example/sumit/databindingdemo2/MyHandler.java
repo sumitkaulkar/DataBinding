@@ -1,6 +1,9 @@
 package com.example.sumit.databindingdemo2;
 
+import android.databinding.BindingAdapter;
+import android.graphics.Color;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -31,5 +34,10 @@ public class MyHandler {
     private String getRandomString() {
         Collections.shuffle(randomString);
         return randomString.get(0);
+    }
+
+    @BindingAdapter({"color"})
+    public static void setColor(TextView textView, String s) {
+        textView.setBackgroundColor(Color.DKGRAY);
     }
 }
